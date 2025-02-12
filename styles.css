@@ -1,97 +1,34 @@
 body {
-    background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-}
-.container {
-    color: black;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-#mainHeader {
-    background: #333;
-    color: white;
-}
-#mainNav ul {
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    list-style: none;
-}
-#mainNav li {
-    display: inline;
-    padding: 5px 10px;
-}
-#mainNav a {
-    
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-}
-#mainNav li:hover {
-    background-color: #aaa;
-}
-.search .input {
-    background-color: #000;
-    border: 0;
-    font-size: 16px;
-    color: #1e1e1e;
-    padding: 15px;
-    height: 40px;
-    width: 40px;
-    transition: width 0.8s ease;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-#jumbo {
-    background-attachment: fixed;
-    background-position: center center;
-    min-height: 200px;
-    text-align: center;
-    height: 2cm;
-}
-#jumbo h1 {
-    color:black;
-    font-size: 30px;
-    padding-top: 20px;
-    line-height: 1.6em;
-    word-spacing: normal;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1 {
-    color: black;
+    font-size: 3.5em;
 }
-#main {
-    float: right;
-    width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
+h1 > span {
+    position: relative;
+    display: inline-block;
+    color: #ff8800;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
 }
-#sidebar {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    border-right: 2px solid black;
-    box-sizing: border-box;
+h1 > span >span {
+     display: block;
+     animation: animateWords 5s infinite ease;
 }
-#mainfooter {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: none;
-    color:black;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-@media (max-width:600px)
 
-/* p { */
-    /* border: 2px solid green; */
-    /* padding: 10px 20px 10px 20px; */
-    /* margin: 40px; */
-/*  */
-/* } */
+@keyframes animateWords {
+    0% {transform: translateY(0%);}
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(-200%);}
+    75% {transform: translateY(-300%);}
+    100% {transform: translateZ(-400%);}
+}
