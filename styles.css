@@ -30,5 +30,5 @@ h1 > span >span {
     25% {transform: translateY(-100%);}
     50% {transform: translateY(-200%);}
     75% {transform: translateY(-300%);}
-    100% {transform: translateZ(-400%);}
+    100% {transform: translateY(-400%);}
 }
